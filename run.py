@@ -46,7 +46,7 @@ while True:
                     print(f"\nid: {data[0]}\nfrom: {data[1]}\nsubject: {data[2]}\ndate: {data[3]}\n")
                     yn = str(input("[+] Want to read this message? [yn]: "))
                     if yn == "y":
-                        html = view_read(f"{payloads[2] + for_auth}&id={data[0]}")["htmlBody"]
+                        html = view_read(f"{payloads[2] + for_auth}&id={data[0]}")["body"]
                         open("index.html", 'w').write(html)
                         os.system("xdg-open http://0.0.0.0:8080/index.html")
         except ValueError:
