@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import requests, json, os, webbrowser
+import requests, json, os
 
 r = requests.session()
 os.system("python3 -m http.server --bind 0.0.0.0 8080 &")
