@@ -64,7 +64,7 @@ while True:
   if email:
     print(f"Your email: {email}")
   else:
-    print("Type 'random' to generate email address")
+    print("Type 'help' for more information")
   cmd = input(">> ")
   list_command = {
     'random': req_random,
