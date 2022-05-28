@@ -32,7 +32,7 @@ def read_message(email, id):
 def check_message():
   read_msg = read_message(email, data['id'])
   print(f"id: {data['id']}\nfrom: {data['from']}\n")
-  option = input("do you want to read this message? (y/n)")
+  option = input("do you want to read this message? (y/n): ")
   with open('read.html', 'w') as file:
     if option == 'y' or option == 'Y':
       file.write(f"{read_msg}\n")
